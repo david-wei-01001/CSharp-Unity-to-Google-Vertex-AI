@@ -14,7 +14,7 @@ The connection provided in this repo completely bypasses any licensing issues in
 - HowToUseInCSharp.cs, HowToUseInUnity.cs are illustration code
 
 # Setup Requirements
-- Create a Google Cloud account
+- Create a Google Cloud account at https://cloud.google.com/vertex-ai?hl=en 
 - Go to AIHttpClients.cs/MyRegion
 - Change the PROJECT_ID to your project ID
 - Modify MODEL_ID and QUERY based on your needs (please look at AIHttpClients.cs)
