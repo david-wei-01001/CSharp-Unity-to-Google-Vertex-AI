@@ -16,7 +16,7 @@ The connection provided in this repo completely bypasses any licensing issues in
 ## Plugins
 - You may need to add some plugins to your project. They are all in the Plugins folder
 - In the case of Unity, go to your project, and drop the Plugins folder in the Asset folder
-- If you already have a Plugins folder, simply merge the contents
+- If you already have a Plugins folder, merge the contents
 
 # Setup Requirements
 - Create a Google Cloud account at https://cloud.google.com/vertex-ai?hl=en 
