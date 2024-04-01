@@ -1,7 +1,14 @@
-# C-Unity-to-Google-Vertex-AI
+# CSharp-Unity-to-Google-Vertex-AI
 Provide code to connect form C# to Google Vertex AI that can be run within Unity
 
 # Descriptions
+Google Gemini is not available in some countries, and connection to Google Vertex AI is required to bypass any legal restrictions\
+Google also provides in its Vertex AI API a sample code to connect to Vertex AI in C#:
+https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal \
+
+However, this code may not work in Unity due to licensing issues.\
+Connection provided in this repo completely bypass any licensing issues inside Unity to guarantee a connection
+
 ## Code
 - GeminiTestRequest.cs, GeminiTextResponse.cs AIHttpClients.cs are Gemini Driving code
 - HowToUseInCSharp.cs, HowToUseInUnity.cs are illustration code
