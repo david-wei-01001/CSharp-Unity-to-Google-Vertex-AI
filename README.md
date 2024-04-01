@@ -9,7 +9,7 @@ https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quicksta
 However, this code may not work in Unity due to licensing issues.\
 The connection provided in this repo completely bypasses any licensing issues inside Unity to guarantee a connection
 
-## Code
+## Codes
 - GeminiTestRequest.cs, GeminiTextResponse.cs AIHttpClients.cs are Gemini Driving code
 - HowToUseInCSharp.cs, HowToUseInUnity.cs are illustration code
 
