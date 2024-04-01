@@ -17,7 +17,7 @@ The connection provided in this repo completely bypasses any licensing issues in
 - Create a Google Cloud account
 - Go to AIHttpClients.cs/MyRegion
 - Change the PROJECT_ID to your project ID
-- Modify MODEL_ID and QUERY based on your needs (please look at AIHttpClient.cs)
+- Modify MODEL_ID and QUERY based on your needs (please look at AIHttpClients.cs)
 
 # Acknowledgements And Modifications
 - This repo is extracted from my LLM-Robotics Project. The link is provided below:
