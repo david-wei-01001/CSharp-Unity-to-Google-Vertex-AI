@@ -10,8 +10,8 @@ However, this code may not work in Unity due to licensing issues.\
 The connection provided in this repo completely bypasses any licensing issues inside Unity to guarantee a connection
 
 ## Codes
-- GeminiTestRequest.cs, GeminiTextResponse.cs AIHttpClients.cs are Gemini Driving code
-- HowToUseInCSharp.cs, HowToUseInUnity.cs are illustration code
+- GeminiTestRequest.cs, GeminiTextResponse.cs AIHttpClients.cs are Gemini Driving codes
+- HowToUseInCSharp.cs, HowToUseInUnity.cs are illustration codes
 
 ## Plugins
 - You may need to add some plugins to your project. They are all in the Plugins folder
