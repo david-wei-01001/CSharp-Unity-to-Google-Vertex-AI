@@ -1,6 +1,7 @@
 using UnityEngine;
 using Gemini;
 using System.Threading.Tasks;
+using System.IO;
 
 public class Communication : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class Communication : MonoBehaviour
 
     /**
     <summary>
-    You can pass as many strings as you want, they can be images, videos, cloud files, etc. as long as you chang the config in GeminiTextRequest.cs
+    You can pass as many strings as you want, they can be images, videos, cloud files, etc. as long as you change the config in GeminiTextRequest.cs
     The first input must be text input.
     </summary>
     */
