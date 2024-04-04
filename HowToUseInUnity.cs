@@ -19,10 +19,33 @@ public class Communication : MonoBehaviour
         geminiTextRequest = new GeminiTextRequest();
     }
 
+    /**
+    <summary>
+    You can pass as many strings as you want, they can be images, videos, cloud files, etc. as long as you chang the config in GeminiTextRequest.cs
+    The first input must be text input.
+    </summary>
+    */
     void Run()
     {
-        yield return StartCoroutine(CommunicationWithGemini('YOUR INPUT SEQUENCES'));
+        // Specify your PNG file path
+        string filePath = "path/to/your/image.png";
+
+        // Convert PNG to Base64 string
+        string base64String = ConvertToBase64(filePath);
+        
+        yield return StartCoroutine(CommunicationWithGemini("Looks at my images!", base64String));
         Debug.Log($"Response is: {llmOutput}");
+    }
+
+    string ConvertToBase64(string filePath)
+    {
+        // Read the file into a byte array
+        byte[] imageBytes = File.ReadAllBytes(filePath);
+
+        // Convert the byte array to a Base64 string
+        string base64String = Convert.ToBase64String(imageBytes);
+
+        return base64String;
     }
 
     IEnumerator CommunicationWithGemini(params string[] strings)
