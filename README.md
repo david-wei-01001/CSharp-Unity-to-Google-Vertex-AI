@@ -26,6 +26,7 @@ The connection provided in this repo completely bypasses any licensing issues in
 
 # Acknowledgements And Modifications
 - This repo is extracted from my LLM-Robotics Project. The link is provided below:
+      https://github.com/david-wei-01001/LLM-Robotics
 - The Network connection with Gemini is based on the following repo with significant changes:
     https://github.com/jackcodewu/GeminiAI.Net
 
