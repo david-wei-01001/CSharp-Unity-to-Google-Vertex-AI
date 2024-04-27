@@ -26,25 +26,26 @@ The connection provided in this repo completely bypasses any licensing issues in
 ```
 - Each string it takes is a kind of data encoded as string. But the first string must be a text prompt, and all other string can be string encoded data like base64string of an image, etc.
 - The **Part** class has to specify this kind of data before you pass in.
-      - For example, **string** can take string data, **InlineData** can take image on the device as a base64string, and **FileData** can take a path to a file on Google Cloud, as long as you provide the **mimeType** of the kind of data correctly, eg. "image/png"", ""image/jpeg", ...
-      - ```cs
-        public class Part
-          {
-             public string text { get; set; }
-             public InlineData inlineData { get; set; }
-             public FileData fileData { get; set; }
-          }
-        public class InlineData
-          {
-              public string mimeType { get; set; }
-              public string data { get; set; } // Base64-encoded data
-          }
-        public class FileData
-          {
-              public string mimeType { get; set; }
-              public string uri { get; set; } // path to files on Google Cloud
-          }
-        ```
+- For example, **string** can take string data, **InlineData** can take image on the device as a base64string, and **FileData** can take a path to a file on Google Cloud, as long as you provide the **mimeType** of the kind of data correctly, eg. "image/png"", ""image/jpeg", ...
+ ```cs
+  public class Part
+    {
+       public string text { get; set; }
+       public InlineData inlineData { get; set; }
+       public FileData fileData { get; set; }
+    }
+  public class InlineData
+    {
+        public string mimeType { get; set; }
+        public string data { get; set; } // Base64-encoded data
+    }
+  public class FileData
+    {
+        public string mimeType { get; set; }
+        public string uri { get; set; } // path to files on Google Cloud
+    }
+```
+
 - If you want to pass in other types of data, please consult [Part API](https://cloud.google.com/dotnet/docs/reference/Google.Cloud.AIPlatform.V1/latest/Google.Cloud.AIPlatform.V1.Part) for al lkind of data acceptable
 - Then add a line to the Part class
   ```cs
