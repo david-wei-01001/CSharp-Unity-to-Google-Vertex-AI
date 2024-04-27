@@ -25,7 +25,7 @@ The connection provided in this repo completely bypasses any licensing issues in
   public async Task<GeminiTextResponse> SendMsg(params string[] strings)
 ```
 - Each string it takes is a kind of data encoded as string. But the first string must be a text prompt, and all other string can be string encoded data like base64string of an image, etc.
-- The **Part** class has to specify this kind of data before you pass in.
+- The **Part** class has to specify the kind of data before you pass in.
 - For example, **string** can take string data, **InlineData** can take image on the device as a base64string, and **FileData** can take a path to a file on Google Cloud, as long as you provide the **mimeType** of the kind of data correctly, eg. "image/png"", ""image/jpeg", ...
  ```cs
   public class Part
