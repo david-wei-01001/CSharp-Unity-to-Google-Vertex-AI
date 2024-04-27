@@ -18,7 +18,7 @@ The connection provided in this repo completely bypasses any licensing issues in
 - In the case of Unity, go to your project, and drop the Plugins folder in the Asset folder
 - If you already have a Plugins folder, merge the contents
 
-## How to Passin Different Kinds of Data
+## How to Pass In Different Kinds of Data
 
 - Go to file **GeminiTextRequest.cs**, you may discover that **SendMsg** Can take as many strings as possible:
 ```cs
